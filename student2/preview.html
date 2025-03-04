@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="validation.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="../student2/icons/climate-action-logo-zip-file/png/logo-no-background.png" type="image/x-icon">
+</head>
+<body>
+    <div class="Preview">
+        <h1 id="previewHead">Feedback Preview</h1>
+        <div class="previewContent">
+            <p><strong>Name:</strong> <span id="previewName"></span></p>            <!--Placeholders that will be replaced with values from the feedback page which are stored in the url-->
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>First Time Visit:</strong> <span id="previewFirstTime"></span></p>
+            <p><strong>Easy to Navigate:</strong> <span id="previewEasyNav"></span></p>
+            <p><strong>Suggestions for Improvement:</strong> <span id="previewSuggestions"></span></p>
+            <p><strong>Satisfaction Rating:</strong> <span id="previewRating"></span></p>
+            <p><strong>Would Recommend:</strong> <span id="previewRecommend"></span></p>
+            <p><strong>Receive Updates:</strong> <span id="previewUpdates"></span></p>
+            <p><strong>Additional Questions or Requests:</strong> <span id="previewRequests"></span></p>
+        </div>
+        <div class="previewBtn">
+            <button onclick="window.close();">Edit Feedback</button>        <!--closes the preview page and lets the user edit the feedback-->
+            <button onclick="proceed(); ">Proceed</button>                  <!--creates mail body, prints success message, and closes the preview page-->
+        </div> 
+    </div>
+    
+    
+    <script>
+        <!--Creating the mail body-->
+        function proceed(){                 
+            var sendMail = "mailto:chanirumannapperuma18@gmail.com?subject=Customer feedback&body="                    
+        + encodeURIComponent("Customer Name: " + getUrlParameter('name') 
+            + "\n\nEmail: " + getUrlParameter('email')
+            + "\n\nFirst time visiting: " + getUrlParameter('firstTime')
+            + "\n\nEasy to navigate: " + getUrlParameter('easyNav')  
+            + "\n\nSuggestions for improving: " + getUrlParameter('suggestions')
+            + "\n\nRating out of 10: " + getUrlParameter('rating')
+            + "\n\nWould you recommend us: " + getUrlParameter('recommend')
+            + "\n\nWould you like to recieve updates? If so: " + getUrlParameter('updates')
+            + "\n\nAdditional requests: " + getUrlParameter('requests')
+        );
+
+            window.location.href = sendMail;
+            window.alert("Feedback sent successfully!");
+            window.close();
+            
+        }
+
+
+        
+
+        // Function to capture URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Populate previewContent div with form data
+        document.getElementById("previewName").textContent = getUrlParameter('name');
+        document.getElementById("previewEmail").textContent = getUrlParameter('email');
+        document.getElementById("previewFirstTime").textContent = getUrlParameter('firstTime');
+        document.getElementById("previewEasyNav").textContent = getUrlParameter('easyNav');
+        document.getElementById("previewSuggestions").textContent = getUrlParameter('suggestions');
+        document.getElementById("previewRating").textContent = getUrlParameter('rating');
+        document.getElementById("previewRecommend").textContent = getUrlParameter('recommend');
+        document.getElementById("previewUpdates").textContent = getUrlParameter('updates');
+        document.getElementById("previewRequests").textContent = getUrlParameter('requests');
+    </script>
+</body>
+</html>
