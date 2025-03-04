@@ -10,9 +10,13 @@ Welcome to the **United Nations Climate Action Hub**, a web platform designed to
 ## 📌 Features
 
 ✅ **Engaging Landing Page:** A visually appealing homepage highlighting climate change.  
-✅ **Navigation Bar:** Easy access to different sections - Home, Gallery, Shop, User Profile, Feedback, and Sitemap.  
+
+✅ **Navigation Bar:** Easy access to different sections - Home, Gallery, Shop, User Profile, Feedback, and Sitemap.
+
 ✅ **Dual-Theme Design:** Split-screen background illustrating the contrast between **climate crisis** and **sustainability**.  
+
 ✅ **Informative Content:** Key messages on climate action, sustainability goals, and the impact of global warming.  
+
 ✅ **Interactive Elements:** User engagement through feedback and information sharing.  
 
 ---
@@ -27,5 +31,12 @@ Welcome to the **United Nations Climate Action Hub**, a web platform designed to
 
 ---
 
-## 📂 Project Structure
+## 🚀 How to Run Locally
+
+**Clone the Repository**
+git clone https://github.com/yourusername/your-repo-name.git
+
+cd Climate-Action-Hub
+
+---
 
