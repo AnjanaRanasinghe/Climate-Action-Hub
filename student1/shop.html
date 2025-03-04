@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <style>
+      .navigationBar{
+          background-color: #618264;
+      }
+  </style>
+  <link rel="stylesheet" href="../student2/style.css">
+  <script src="https://kit.fontawesome.com/dc6bc445f0.js"></script>
+</head>
+<body>
+  <!-- student 2 nav bar -->
+  <hr>
+
+<div class="container1" id="home">                  <!--Header which includes the united nations logo and the title-->
+		<div class="header">
+            <div class="logo">
+                <img id="logo" src="https://sdgs.un.org/themes/custom/porto/assets/images/logo-en.svg" alt="logo">
+			</div>
+            <div class="headertext">
+                <span id="text1">Department of Economic and Social Affairs</span><br>
+                Sustainable Development
+            </div>
+        </div>    
+    
+</div>  
+<div class="navigationBar">
+    <nav>
+        <ul>
+            <li><a href="../student2/home.html" id="home-link" class="link">Home</a></li>
+            <li><a href="../student4/gallery.html" id="gallery-link" class="link">Gallery</a></li>
+            <li><a href="../student1/shop.html" id="shop-link" class="link">Shop</a></li>
+            <li><a href="../student3/userprofile.html" id="profile-link" class="link">User Profile</a></li>
+            <li><a href="../student2/feedback.html" id="feedback-link" class="link">Feedback</a></li>
+            <li><a href="../student4/sitemap.html" id="sitemap-link" class="link">Sitemap</a></li>
+        </ul>
+    </nav> 
+</div> 
+<!-- end of nav bar -->
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="clothing-slide"> Shop our Latest <br>&nbsp;&nbsp;Fashion Collection</div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://earthhero.com/cdn/shop/collections/Header-Beauty-And-Care_675e5951-a1ce-4a8c-94fc-47bd65117b47_1757x.jpg?v=1661480556');">
+              <div class="beauty-slide"> Selfcare has never been more &nbsp;&nbsp;Sustainable </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://earthhero.com/cdn/shop/collections/work-from-home_7dcd347e-b72b-48b8-a48e-7416367ad091_2000x.jpg?v=1661811311');">
+              <div class="tech-slide"> Echo-Friendly <br> &nbsp;&nbsp; Tech accessories </div>
+            </div>
+
+            <div class="slide" style="background-image: url('https://earthhero.com/cdn/shop/collections/stasher-header_8ff1254e-9f57-4385-b8ea-86ef3d251aa7_2600x.jpg?v=1661480570');">
+              <div class="waste-slide"> Sustainable Groceries for a Brighter Future </div>
+            </div>
+        </div>
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+      <br><br>
+      <div class="shop_intro">
+        <h3 class="shop_intro">Shopping made Sustainable</h3>
+        <br>
+        <p>Welcome to our sustainable sanctuary! Step into a world where conscious choices meet captivating designs. We're <br>thrilled to invite you to explore our eco-friendly online store, where every purchase embodies our commitment <br>to a greener tomorrow. From renewable materials to ethical practices, each product  tells a story of <br>sustainability and style. Join us in shaping a brighter future, one mindful purchase at a time.
+        <br> Welcome home to sustainability!</p>
+      </div>
+      <br><br>
+      <hr class="thin_hr">
+      <br>
+      <div class="cart-container">
+        <button class="cart-btn" onclick="toggleCart()">
+            <img src="https://www.iconsdb.com/icons/preview/white/shopping-cart-xxl.png" alt="Cart Icon" class="cart-icon">
+            <span class="cart-text">View Cart</span>
+        </button>
+        <div class="cart-partition">
+            <div class="cart-items">
+            </div>
+            <br>
+            <div class="cart-total">Total: $0.00</div>
+            <br>
+            <button class="proceed-btn" onclick="proceed_checkout()">Proceed</button>
+        </div>
+    </div>
+    <br>
+      <div id="CLOTHING" class="item_tags">SHOP / CLOTHING</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygRyGBowQo8Jm2YU6UAsVun-CRgmHz93OPA&usqp=CAU" alt="Product 1">
+            <div class="item_name">Save the planet <br> (print-1)</div>
+            <div class="item_price">$25.45</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity1">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity1" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Save planet T-shirt(1)" data-price="24.45" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygRyGBowQo8Jm2YU6UAsVun-CRgmHz93OPA&usqp=CAU">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="data:image/jpeg;base64,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" alt="Product 2">
+          <div class="item_name">Save the planet <br> (print-2)</div>
+          <div class="item_price">$25.45</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity2">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity2" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Save planet T-shirt(2):" data-price="24.45" data-image="data:image/jpeg;base64,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">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqjxYdIxwEJ-0D5lP5bAuml6oJ3xgHoyr95cssIKtQwdG3iwabHrHnI0PQ2DoNHd8pH2Y&usqp=CAU" alt="Product 1">
+        <div class="item_name">Save the planet <br> (print-3)</div>
+        <div class="item_price">$25.45</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity3">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity3" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Save planet T-shirt(3):" data-price="24.45" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqjxYdIxwEJ-0D5lP5bAuml6oJ3xgHoyr95cssIKtQwdG3iwabHrHnI0PQ2DoNHd8pH2Y&usqp=CAU">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="https://i5.walmartimages.com/seo/Cute-Earth-Day-T-Shirt_50b16b6e-d867-4dad-beb6-7b078ee75c9c.f508b4f0fe6a4afce471f67c5358fe52.jpeg?odnHeight=432&odnWidth=320&odnBg=FFFFFF" alt="Product 1">
+      <div class="item_name">Save the planet <br> (print-4)</div>
+      <div class="item_price">$25.45</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity4">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity4" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Save planet T-shirt(4): " data-price="24.45" data-image="https://i5.walmartimages.com/seo/Cute-Earth-Day-T-Shirt_50b16b6e-d867-4dad-beb6-7b078ee75c9c.f508b4f0fe6a4afce471f67c5358fe52.jpeg?odnHeight=432&odnWidth=320&odnBg=FFFFFF">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+    <div id="BEAUTY" class="item_tags">SHOP / BEAUTY & CARE </div>
+    <br>
+    <div class="product-tiles">
+      <div class="product-tile">
+          <img src="https://earthhero.com/cdn/shop/files/Untitleddesign_4_1300x.png?v=1698267071" alt="Product 1">
+          <div class="item_name">Zero waste Mens Razor</div>
+          <div class="item_price">$29.99</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity5">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity5" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Zero waste razor: " data-price="29.99" data-image="https://earthhero.com/cdn/shop/files/Untitleddesign_4_1300x.png?v=1698267071">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="https://earthhero.com/cdn/shop/products/Davids_peppermint_tube_1-scaled_1300x.jpg?v=1694709374" alt="Product 1">
+        <div class="item_name">Cloride free Toothpaste</div>
+        <div class="item_price">$25.45</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity6">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity6" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+          </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Cloride free Toothpaste: " data-price="15.00" data-image="https://earthhero.com/cdn/shop/products/Davids_peppermint_tube_1-scaled_1300x.jpg?v=1694709374">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="https://earthhero.com/cdn/shop/files/circularbodiesspraydeodorant_1080x.jpg?v=1706099179" alt="Product 1">
+      <div class="item_name">Organic Zero waste deodorant</div>
+      <div class="item_price">$25.45</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity7">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity7" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Organic Zero waste deodorant: " data-price="9.99" data-image="https://earthhero.com/cdn/shop/files/circularbodiesspraydeodorant_1080x.jpg?v=1706099179">Add to Cart</button>
+  </div>
+  <div class="product-tile">
+    <img src="https://earthhero.com/cdn/shop/products/Patch-Aloe-Vera-Bamboo-Bandages-25ct-1_df5354a7-1be9-4912-a2cb-9f25fa8bcea1_800x.jpg?v=1694109705" alt="Product 1">
+    <div class="item_name">Biodegradable organic patches</div>
+    <div class="item_price">$20.00</div>
+    <div class="order-details">
+      <div class="quantity-container">
+        <label for="Quantity8">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity8" name="quantity" value="1" min="1">
+            <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Biodegradable organic patches: " data-price="20.00" data-image="https://earthhero.com/cdn/shop/products/Patch-Aloe-Vera-Bamboo-Bandages-25ct-1_df5354a7-1be9-4912-a2cb-9f25fa8bcea1_800x.jpg?v=1694109705">Add to Cart</button>
+  </div>
+  </div>
+  <br><br><br>
+
+  <!-- tech section -->
+
+  <div id="TECH" class="item_tags">SHOP / TECH & GADGETS</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="https://cdn.shopify.com/s/files/1/0617/2878/4620/products/oakywood-Wooden-AirPods-Plus-case-2_540x.jpg?v=1694032398" alt="Product 1">
+            <div class="item_name">Walnut wood Air-Pods case</div>
+            <div class="item_price">$45.00</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity9">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity9" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+              </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Walnut wood Air-Pods case: " data-price="45.00" data-image="https://cdn.shopify.com/s/files/1/0617/2878/4620/products/oakywood-Wooden-AirPods-Plus-case-2_540x.jpg?v=1694032398">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="https://earthhero.com/cdn/shop/products/02-pela-case-green-iphone-12-mini_567be226-7f1e-406f-a030-8d5d2a44b967_800x.jpg?v=1694191973" alt="Product 1">
+          <div class="item_name">Bio degradable cover <br> (for i phones)</div>
+          <div class="item_price">$30.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity10">Quantity:</label>
+              <div class="quantity-input">
+                  <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                  <input type="number" class="quantity" id="Quantity10" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+          </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Bio degradable cover (1): " data-price="30.00" data-image="https://earthhero.com/cdn/shop/products/02-pela-case-green-iphone-12-mini_567be226-7f1e-406f-a030-8d5d2a44b967_800x.jpg?v=1694191973">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="https://earthhero.com/cdn/shop/products/Pela-Case-Compostable-Sea-Shell-iPhone-Pela-Case-6-7-8-Shelbizleee-7_800x.jpg?v=1694710955" alt="Product 1">
+        <div class="item_name">Bio degradable cover <br> (for i phones)</div>
+        <div class="item_price">$30.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity11">Quantity:</label>
+            <div class="quantity-input">
+                <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                <input type="number" class="quantity" id="Quantity11" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Bio degradable cover (2): " data-price="30.00" data-image="https://earthhero.com/cdn/shop/products/Pela-Case-Compostable-Sea-Shell-iPhone-Pela-Case-6-7-8-Shelbizleee-7_800x.jpg?v=1694710955">Add to Cart</button>
+        </div>
+    <div class="product-tile">
+      <img src="https://earthhero.com/cdn/shop/products/better-battery-co-better-battery-pack-32005524947055_1300x.jpg?v=1696007886" alt="Product 1">
+      <div class="item_name">Reusable Batteries <br> (50 pack)</div>
+      <div class="item_price">$79.99</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity12">Quantity:</label>
+          <div class="quantity-input">
+              <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+              <input type="number" class="quantity" id="Quantity12" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Reusable Batteries: " data-price="79.99" data-image="https://earthhero.com/cdn/shop/products/better-battery-co-better-battery-pack-32005524947055_1300x.jpg?v=1696007886">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+
+<!-- zero waste section -->
+
+    <div id="WASTE" class="item_tags">SHOP / ZERO WASTE & SUPPLIES</div>
+      <div class="product-tiles">
+        <div class="product-tile">
+            <img src="https://earthhero.com/cdn/shop/products/dropps_dish_lemon-e1628188756978_5b48eb17-e595-4a9f-aaa4-fbc8f0ad6c0a_800x.png?v=1694709254" alt="Product 1">
+            <div class="item_name">Fabric softner pods</div>
+            <div class="item_price">$19.99</div>
+            <div class="order-details">
+              <div class="quantity-container">
+                <label for="Quantity13">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity13" name="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+                </div>
+            </div>
+            </div>
+            <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Fabric softner pods: " data-price="19.99" data-image="https://earthhero.com/cdn/shop/products/dropps_dish_lemon-e1628188756978_5b48eb17-e595-4a9f-aaa4-fbc8f0ad6c0a_800x.png?v=1694709254">Add to Cart</button>
+        </div>
+        <div class="product-tile">
+          <img src="https://earthhero.com/cdn/shop/files/Untitleddesign_2_1300x.png?v=1698264774" alt="Product 1">
+          <div class="item_name">Biodegradable Kitchen Sponges</div>
+          <div class="item_price">$15.00</div>
+          <div class="order-details">
+            <div class="quantity-container">
+              <label for="Quantity14">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity14" name="quantity" value="1" min="1">
+                  <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+              </div>
+          </div>
+          </div>
+          <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Biodegradable Kitchen Sponges: " data-price="15.00" data-image="https://earthhero.com/cdn/shop/files/Untitleddesign_2_1300x.png?v=1698264774">Add to Cart</button>
+      </div>
+      <div class="product-tile">
+        <img src="https://earthhero.com/cdn/shop/products/02-all-purpose-cleaner-16oz-spray_d58032d9-0f30-4603-9df6-2d4466c642ed_800x.jpg?v=1694112096" alt="Product 1">
+        <div class="item_name">Natural All-Perpouse Cleaner</div>
+        <div class="item_price">$25.00</div>
+        <div class="order-details">
+          <div class="quantity-container">
+            <label for="Quantity15">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity15" name="quantity" value="1" min="1">
+                <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            </div>
+        </div>
+        </div>
+        <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Natural All-Perpouse Cleaner: " data-price="25.00" data-image="https://earthhero.com/cdn/shop/products/02-all-purpose-cleaner-16oz-spray_d58032d9-0f30-4603-9df6-2d4466c642ed_800x.jpg?v=1694112096">Add to Cart</button>
+    </div>
+    <div class="product-tile">
+      <img src="https://earthhero.com/cdn/shop/products/earthhero-approved-reusable-face-mask-1_800x.jpg?v=1694709391" alt="Product 1">
+      <div class="item_name">Organic Reusable Facemask <br> (12 pack)</div>
+      <div class="item_price">$10.00</div>
+      <div class="order-details">
+        <div class="quantity-container">
+          <label for="Quantity16">Quantity:</label>
+                <div class="quantity-input">
+                    <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+                    <input type="number" class="quantity" id="Quantity16" name="quantity" value="1" min="1">
+              <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+          </div>
+      </div>
+      </div>
+      <button class="add-to-cart" onclick="addItemToCart(this)" data-name="Organic Reusable Facemask: " data-price="10.00" data-image="https://earthhero.com/cdn/shop/products/earthhero-approved-reusable-face-mask-1_800x.jpg?v=1694709391">Add to Cart</button>
+    </div>
+    </div>
+    <br><br><br>
+    <div class="shop-motive">
+      <h3 class="shop-motive">Supporing the Movement</h3>
+      <br><br>
+      <p class="shop-motive">Thank You , your support extends beyond sustainable shopping. With every purchase, you're <br>also contributing to our mission of fighting climate change. A portion of your transaction goes directly to the <br><a class="shop-motive" href="https://www.globalgiving.org/climate-action-fund/" target="_blank" rel="noopener noreferrer">Global Giving Fund</a>, championing initiatives dedicated to preserving our planet. Thank you for joining us on this <br>journey towards a brighter, greener future. Together, we can make a world of difference</p>
+      <br><br><br>
+    </div>
+    <br><br>
+
+    <!-- student 2 footer -->
+    <div class="footer">
+      <div class="footerlogo">
+          <img src="icons/climate-action-logo-zip-file/png/logo-no-background.png" class="logo" alt="united nations logo">
+      </div>
+      <div class="footernav">
+          <h3 id="links">Quick Links</h3>
+          <ul>
+              <li><a href="../student2/home.html">Home</a></li>
+              <li><a href="../student2/home.html#target">Mission</a></li>
+              <li><a href="../student3/team.html">Our Team</a></li>
+              <li>
+                  <dl>
+                      <dt>Page Editor</dt>                                                                    <!--Links to student page editors-->
+                      <dd><a href="pageeditor1.html">Student 1</a></dd>
+                      <dd><a href="../student2/pageeditor2.html" target="_blank">Student 2</a></dd>
+                      <dd><a href="../student3/pageeditor3.html">Student 3</a></dd>
+                      <dd><a href="../student4/pageeditor4.html">Student 4</a></dd>
+                  </dl>
+              </li>
+          </ul>
+      </div><!--
+   --><div class="contacts">
+          <h3>Contact Us</h3>
+          <i class="fa-solid fa-phone"></i>
+          <span class="contacttext">+9445678906757</span> <br>
+          <i class="fa-solid fa-envelope"></i>
+          <span class="contacttext">w2051988@westminster.ac.uk</span> <br>
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="contacttext">10 Trelawney Pl, Colombo 00400</span>
+      </div>
+      <div class="news">
+          <h3>Sign Up for E-News</h3>
+          <div class="newsform">
+              <form>
+                  <label for="newsnum">Email: </label><br>
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" name="emailadd" id="emailadd" placeholder="Enter your email here...">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                  <br><br><br>
+      
+                  <label for="newsnum">Get text updates: </label><br>
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" name="newsnum" id="newsnum" placeholder="Enter your contact number here...">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+          </div> 
+      </div>
+      <div class="socials">
+          <a href="https://www.facebook.com/share/xfVtXoaqveTdCHqr/?mibextid=WC7FNe" target="_blank"><img src="icons/icons8-facebook-100.png" alt="facebook icon"></a>
+          <a href="https://www.instagram.com/unitednations?igsh=MXFmejY2bWlpbW5xNA==" target="_blank"><img src="icons/icons8-instagram-100.png" alt="instagram icon"></a>
+          <a href="https://twitter.com/UN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="icons/icons8-twitterx-100.png" alt="X icon"></a>
+          <a href="https://youtube.com/@unitednations?si=0MrT3-E2_d4Chzd-" target="_blank"><img src="icons/icons8-youtube-100.png" alt="youtube icon"></a>
+      </div>
+  </div>
+    <script src="shop.js"></script>
+    <script>
+      const navEl = document.querySelector('.navigationBar');                                 //Changing the border colour of the navigation bar when strolled to the top
+      window.addEventListener('scroll', () => {
+          if (window.scrollY >= 130) { // Change from window.screenY to window.scrollY
+              navEl.classList.add('navigationBar-scrolled'); // Add the class when scrolling down
+          } else {
+              navEl.classList.remove('navigationBar-scrolled'); // Remove the class when scrolling back up
+          }
+      });
+
+  </script>
+  <!-- end of student 2 footer -->
+
+</body>
+</html>
+

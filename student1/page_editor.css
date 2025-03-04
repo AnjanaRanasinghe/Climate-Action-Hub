@@ -1,0 +1,32 @@
+html{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.page-editor-intro{
+    text-align: center;
+}
+h2.page-editor-intro{
+    background-color: #79AC78;
+    color: white;
+    font-weight: 700;
+}
+.page-editor-content{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #B0D9B1;
+
+}
+h3.page-editor-content{
+    font-weight: 500;
+}
+a.page-editor-content{
+    color: white;
+}
+.editor_hr{
+    color: black;
+    size: 0.5%;
+    size: 85%;
+}

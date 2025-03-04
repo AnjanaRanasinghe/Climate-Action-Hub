@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash_screen{
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(splash.jpeg) no-repeat center fixed ;
+  background-size: cover;
+  transition: 1s;
+}
+
+.title{
+  position: absolute;
+  color: #126e1a;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.logo{
+  font-family: "Kanit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5rem;
+  position: relative;
+  /* changes : inline block */
+}
+
+.mission{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: large;
+  color: #618264;
+  font-style: normal;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+}
+
+.team{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  color: black;
+  position: inherit;
+  text-align: center;
+  left: 50%;
+  top: 94%;
+  transform: translate(-50%,-50%);
+}
+header{
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  text-align: center;
+  font-size: 5rem;
+  transform: translate(-50%,-50%);
+}

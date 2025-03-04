@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background-color: #f0faf1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-weight: 150;
+    flex: 1;
+    padding-right: 20px;
+    order: 1;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    order: 2;
+}
+
+.image img {
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reverse the order */
+.section:nth-child(even) .text {
+    order: 2;
+    padding-left: 20px;
+}
+
+.section:nth-child(even) .image {
+    order: 1;
+}
+#donations{
+    color: white;
+    background-color: #79AC78;
+    text-align: center;
+}
+
+h3{
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#donation_heading{
+    text-align: center;
+    padding-top: 30px;
+}
+.donation_button{
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: #79AC78;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px;
+    cursor: pointer ;
+    transition-duration: 0.5s;
+}
+.donation_button:hover{
+    background-color: white;
+    color: #79AC78;
+}
+.conlcution{
+    text-align: center;
+    color: #618264;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    width: 100%;
+}
+#conclution_txt{
+    text-align: center;
+}
+.intro_bg{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-size: cover;
+    min-width: 0;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1548337138-e87d889cc369?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGNsaW1hdGUlMjBjaGFuZ2V8ZW58MHx8MHx8fDA%3D);
+}
+.intro_txt{
+    text-align: center;
+    font-weight: 150;
+}
+.intro_title{
+    color: #174d1b;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    width: 100%;
+    font-size: 4rem;
+}
+.intro_top{
+    color: #618264;
+    font-weight: 300;
+}
+.hr80{
+    color: black;
+    size: 0.7%;
+    width: 80%;
+}
+.hr85{
+    color: black;
+    size: 0.7%;
+    width: 85%;
+}
+.ctrl_buttons{
+    position: absolute;
+    top:20px;
+    left:300px;
+}
+.cont_end_button{
+    border: none;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background:none;
+    color:gray;
+
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.cont_end_button:hover{
+    color: white;
+    background-color: darkgreen;
+}

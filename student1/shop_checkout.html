@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .cart-partition {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+        }
+
+
+        .cart-total {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <title>Check Out</title>
+</head>
+<body>
+    <div class="checkout-intro">
+        <h2 class="checkout-intro-head">Almost There...</h2>
+        <p class="checkout-intro-text">Finalizing your order.Please proceed to fill in your information to complete your purchase</p>
+    </div>
+    <div class="checkout-container">
+        <div class="left-section">
+            <div class="checkout-form">
+                <!-- Personal Details -->
+                <fieldset class="checkout-form">
+                    <p class="form-topic">Check out > Contact Details</p>
+                    <br>
+                    <label for="F-name">First Name:</label><br>
+                    <input class="co-in" type="text" id="F-name" required placeholder="   Enter your first name">
+                    <span class="error-message" id="F-name-error"></span>
+                    <br>
+                    <label for="L-name">Last Name</label><br>
+                    <input class="co-in" type="text" name="last name" id="L-name" required placeholder="  Enter your last name">
+                    <span class="error-message" id="L-name-error"></span>
+                    <br>
+                    <label for="phone">Phone number</label><br>
+                    <input class="co-in" type="tel" name="phone" id="phone" required placeholder="    +94 xxx xxx xxxx">
+                    <span class="error-message" id="phone-error"></span>
+                    <br>
+                    <label for="e-mail">E-mail</label><br>
+                    <input class="co-in" type="email" name="email" id="E-mail" placeholder="     E mail">
+                </fieldset><br>
+                <!-- Payment Details -->
+                <fieldset class="checkout-form">
+                    <p class="form-topic">Check out > Payment Details</p>
+                    <br>
+                    <label for="card-number">Card Number:</label><br>
+                    <input class="co-in" type="text" id="card-number" required>
+                    <span class="error-message" id="card-number-error"></span>
+                    <br>
+                    <label for="Expiration_date">Expiration Date</label><br>
+                    <input type="text" class="co-in"  id="Expiration_date" required>
+                    <span class="error-message" id="Expiration_date-error"></span>
+                    <br>
+                    <label for="cvv">CVV</label><br>
+                    <input type="text" id="cvv" class="co-in" required>
+                    <span class="error-message" id="cvv-error"></span>
+                </fieldset><br>
+                <!-- Shipping Address -->
+                <fieldset class="checkout-form">
+                    <p class="form-topic">Check out > Shipping Address</p>
+                    <br>
+                    <label for="country">Country</label><br>
+                    <input class="co-in" type="text" id="country" required placeholder="      Japan">
+                    <span class="error-message" id="country-error"></span>
+                    <br>
+                    <label for="house-no">House / Apartment / suite : number</label><br>
+                    <input class="co-in" type="text" id="house-no" required placeholder="     House number">
+                    <span class="error-message" id="house-no-error"></span>
+                    <br><br>
+                    <label for="street-nanem">Street name</label><br>
+                    <input class="co-in"  type="text" id="street-name" placeholder="      Street name" required>
+                    <span class="error-message" id="street-name-error"></span>
+                    <br>
+                    <label for="city">City</label><br>
+                    <input class="co-in" type="text" id="city" placeholder="      Tokyo">
+                    <br><br>
+                    <label for="zipcode">Zip-code</label><br>
+                    <input class="co-in" type="text" id="zipcode" required >
+                    <span class="error-message" id="zipcode-error"></span> <br>
+                    <button class="place-order-btn" onclick="validateAndSubmit()">Place Order</button>
+                </fieldset><br>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="cart-partition">
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                </div>
+            </div>
+        </div>
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your order has been successfully placed!</p>
+            </div>
+        </div>
+    </div>
+        <script src="shop_checkhout.js"></script>
+</body>
+</html>
