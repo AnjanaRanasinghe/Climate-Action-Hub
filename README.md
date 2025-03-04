@@ -34,7 +34,7 @@ Welcome to the **United Nations Climate Action Hub**, a web platform designed to
 ## 🚀 How to Run Locally
 
 **Clone the Repository**
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/AnjanaRanasinghe/Climate-Action-Hub.git
 
 cd Climate-Action-Hub
 
