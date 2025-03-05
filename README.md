@@ -40,3 +40,25 @@ cd Climate-Action-Hub
 
 ---
 
+## 🎨 Screenshots
+
+---
+
+## 🤝 Contributing
+We welcome contributions! Feel free to fork this repository, submit issues, or make pull requests to improve this project.
+
+---
+
+## 📜 License
+This project is distributed under the MIT License. Feel free to use it as you wish, and contributions are always welcome!
+
+---
+## 📞 Contact
+📍 Upul Electronics
+
+📧 Email: anjana.20231160@iit.ac.lk
+
+📍 Location: No 102/0/5, Dagonna Rd, Minuwangoda, Sri Lanka
+
+---
+
