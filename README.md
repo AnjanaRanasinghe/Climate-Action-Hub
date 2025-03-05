@@ -54,7 +54,7 @@ This project is distributed under the MIT License. Feel free to use it as you wi
 
 ---
 ## 📞 Contact
-📍 Upul Electronics
+📍 Anjana Ranasinghe
 
 📧 Email: anjana.20231160@iit.ac.lk
 
