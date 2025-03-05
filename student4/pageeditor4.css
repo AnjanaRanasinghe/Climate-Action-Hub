@@ -1,0 +1,78 @@
+
+.background img{
+    width: 100vw;
+	height: 100vh;
+    object-fit: cover;
+    position:fixed;
+    top: 0%;
+    filter: brightness(30%);
+    z-index:-1; /* Ensure the img is behind other elements*/
+}
+
+.Student-details{
+    text-align: center;
+    color: white ;
+}
+
+h1{
+    font-size: 40px;
+    color: whitesmoke;
+    margin: 50px 0;
+    text-align: center; 
+}
+
+.topdetails h2{
+    font-size:30px;
+    text-align: center; 
+} 
+
+h3{
+    font-size: 30px;
+}
+
+.list ul{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center; 
+    padding: 10px;
+}
+
+
+.link a{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #B0D9B1;
+    color: black;
+    text-align: center; 
+}
+.link a:hover{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #618264;
+    color: black;
+    text-align: center; 
+} 
+
+.page-details{
+    background-color: lightgrey;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin-bottom: 50px;
+    width: 1000px;
+    height: 100%;
+    margin: 30px auto;
+    padding: 20px 50px;
+    text-align: center; 
+}
+
+.botton{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.descr-btn{
+    color: aqua;
+}
+ 
