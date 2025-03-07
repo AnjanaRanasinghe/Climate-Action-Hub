@@ -42,6 +42,9 @@ cd Climate-Action-Hub
 
 ## 🎨 Screenshots
 
+![image](https://github.com/user-attachments/assets/c330cc3c-f6f4-4bb3-a041-d8bf2a01cdb3)
+![image](https://github.com/user-attachments/assets/1979e14c-5b11-407f-9b63-22544494049a)
+
 ---
 
 ## 🤝 Contributing
